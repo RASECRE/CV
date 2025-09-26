@@ -1,0 +1,101 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px; /* reducido de 30px */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  height: auto; /* aseguramos altura dinámica */
+}
+
+section {
+  page-break-inside: avoid; /* evita cortes de página */
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  color: #111;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+section p, section ul {
+  margin: 10px 0;
+}
+
+.contact a {
+  margin-right: 15px;
+}
+
+.skills, .knowledge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span, .knowledge span {
+  background-color: #eaeaea;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background: none;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media print {
+  .no-print { display: none; }
+}
